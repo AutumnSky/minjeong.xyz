@@ -1,0 +1,41 @@
+.header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100wh;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos_profile {
+    border-radius: 50%;
+}
+
+.logos_name {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+
+.menus {
+    display: flex;
+    column-gap: 1.3rem;
+    margin-right: 2rem;
+}
+
+.menu {
+    all: unset;
+    border: none;
+    color: #2C2E33;
+    transition: all 0.3s ease-in-out;
+}
