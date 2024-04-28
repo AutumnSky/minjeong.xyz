@@ -8,7 +8,10 @@ type Props = {
 
 export default function Menu({ link, title }: Props) {
     return (
-        <Link className={styles.menu}
-            href={link}>{title}</Link>
+        <div className={styles.menu_container}>
+            <Link className={styles.menu_link}
+                href={link}>{title}</Link>
+            <div className={styles.highlight_bar}></div>
+        </div>
     )
 }

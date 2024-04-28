@@ -1,17 +1,35 @@
-.menu {
+.menu_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.menu_link {
     all: unset;
     border: none;
     color: #2C2E33;
-    transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    flex-grow: 1;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0.8rem;
-
-    font-size: 1.2rem;
 }
 
-.menu:hover {
+.menu_link:hover {
     color: #F29F05;
+}
+
+.menu_link:focus {
+    color: #F29F05;
+}
+
+.highlight_bar {
+    background-color: #F29F05;
+    width: 90%;
+    height: 5px;
 }

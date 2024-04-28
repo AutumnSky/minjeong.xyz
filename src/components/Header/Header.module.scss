@@ -3,7 +3,9 @@
     display: flex;
     flex-direction: row;
     width: 100wh;
-    padding: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
     align-items: center;
     justify-content: space-between;
 
@@ -16,6 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .logos_profile {
@@ -30,6 +33,5 @@
 .menus {
     display: flex;
     column-gap: 1.3rem;
-    margin-right: 2rem;
     align-self: stretch;
 }
