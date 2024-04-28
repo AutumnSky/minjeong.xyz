@@ -1,6 +1,6 @@
 import styles from "./Header.module.scss"
 import Image from 'next/image'
-import Link from 'next/link'
+import Menu from "./Menu"
 
 export default function Header() {
   return (
@@ -15,10 +15,8 @@ export default function Header() {
         <p className={styles.logos_name}>Minjeong Kim</p>
       </div>
       <div className={styles.menus}>
-        <Link className={styles.menu}
-          href="/">About Me</Link>
-        <Link className={styles.menu}
-          href="/portfolios">Careers & Portfolios</Link>
+        <Menu link="/" title="About Me" />
+        <Menu link="/portfolios" title="Careers & Portfolios" />
       </div>
     </header>
   );
