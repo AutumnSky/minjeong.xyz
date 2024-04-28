@@ -3,4 +3,15 @@
     border: none;
     color: #2C2E33;
     transition: all 0.3s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.8rem;
+
+    font-size: 1.2rem;
+}
+
+.menu:hover {
+    color: #F29F05;
 }
