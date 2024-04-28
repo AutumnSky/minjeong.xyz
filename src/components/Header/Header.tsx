@@ -1,8 +1,13 @@
+'use client'
+
 import styles from "./Header.module.scss"
 import Image from 'next/image'
 import Menu from "./Menu"
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
+  const pathname = usePathname()
+
   return (
     <header className={styles.header}>
       <div className={styles.logos}>
@@ -15,8 +20,8 @@ export default function Header() {
         <p className={styles.logos_name}>Minjeong Kim</p>
       </div>
       <div className={styles.menus}>
-        <Menu link="/" title="About Me" />
-        <Menu link="/portfolios" title="Careers & Portfolios" />
+        <Menu link="/" title="About Me" isSelected={pathname === '/'} />
+        <Menu link="/portfolios" title="Careers & Portfolios" isSelected={pathname === '/portfolios'} />
       </div>
     </header>
   );

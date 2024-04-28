@@ -3,14 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    transition: all 0.3s ease-in-out;
 }
 
-.menu_link {
+%menu_link {
     all: unset;
     border: none;
-    color: #2C2E33;
     font-size: 1.2rem;
     padding: 0.8rem;
     flex-grow: 1;
@@ -20,16 +17,32 @@
     justify-content: center;
 }
 
-.menu_link:hover {
+.menu_link_normal {
+    @extend %menu_link;
+    color: #2C2E33;
+}
+
+.menu_link_normal:hover {
+    color: #F29F05;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu_link_selected {
+    @extend %menu_link;
     color: #F29F05;
 }
 
-.menu_link:focus {
-    color: #F29F05;
-}
-
-.highlight_bar {
-    background-color: #F29F05;
+%highlight_bar {
     width: 90%;
     height: 5px;
+}
+
+.highlight_bar_normal {
+    @extend %highlight_bar;
+    background-color: transparent;
+}
+
+.highlight_bar_selected {
+    @extend %highlight_bar;
+    background-color: #F29F05;
 }
