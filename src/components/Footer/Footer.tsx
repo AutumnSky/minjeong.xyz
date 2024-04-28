@@ -1,4 +1,4 @@
-import styles from "./footer.module.scss"
+import styles from "./Footer.module.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
