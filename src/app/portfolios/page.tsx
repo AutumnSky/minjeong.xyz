@@ -25,13 +25,13 @@ type Portfolio = {
 export default async function Portfolios() {
     const data = await fetch('https://www.minjeong.xyz/data.json')
     const portfolios: Portfolio[] = await data.json()
-    return(
+    return (
         <>
             <div>Portfolios</div>
             {portfolios.map((portfolio) => {
-                return(
-                    <div key={portfolio._id}>{portfolio.year} - {portfolio.projectName.ko}</div>
-                )  
+                return (
+                    <div key={portfolio._id}>{portfolio.year} - {portfolio.projectName.en}</div>
+                )
             })}
         </>
     )
