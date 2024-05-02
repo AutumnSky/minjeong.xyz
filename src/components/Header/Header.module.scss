@@ -1,5 +1,6 @@
 .header {
-    background-color: white;
+    background-color: $white-fallback;
+    background-color: $white;
     display: flex;
     flex-direction: row;
     width: 100wh;
@@ -8,10 +9,6 @@
     padding-top: 1rem;
     align-items: center;
     justify-content: space-between;
-
-    -webkit-box-shadow: 0 4px 6px -6px #222;
-    -moz-box-shadow: 0 4px 6px -6px #222;
-    box-shadow: 0 4px 6px -6px #222;
 }
 
 .logos {
@@ -26,6 +23,8 @@
 }
 
 .logos_name {
+    color: $font-black-fallback;
+    color: $font-black;
     margin-left: 2rem;
     font-size: 1.2rem;
 }

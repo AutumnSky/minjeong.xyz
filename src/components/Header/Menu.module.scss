@@ -15,21 +15,27 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    margin-bottom: 0.5rem;
 }
 
 .menu_link_normal {
     @extend %menu_link;
-    color: #2C2E33;
-}
+    color: $font-black-fallback;
+    color: $font-black;
 
-.menu_link_normal:hover {
-    color: #F29F05;
-    transition: all 0.3s ease-in-out;
+    &:hover {
+        cursor: pointer;
+        color: $primary-fallback;
+        color: $primary;
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 .menu_link_selected {
     @extend %menu_link;
-    color: #F29F05;
+    color: $primary-fallback;
+    color: $primary;
 }
 
 %highlight_bar {
@@ -44,5 +50,6 @@
 
 .highlight_bar_selected {
     @extend %highlight_bar;
-    background-color: #F29F05;
+    background-color: $primary-fallback;
+    background-color: $primary;
 }

@@ -142,6 +142,12 @@ button {
 	all: unset;
 }
 
+/* theme */
+// https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme
+:root {
+	color-scheme: light dark;
+}
+
 /* global css */
 
 body {
@@ -152,7 +158,24 @@ body {
 	min-height: 100vh;
 }
 
+header {
+	z-index: 100;
+
+	-webkit-box-shadow: 0 4px 6px -6px #222;
+	-moz-box-shadow: 0 4px 6px -6px #222;
+	box-shadow: 0 4px 6px -6px #222;
+}
+
 section {
 	flex-grow: 1;
 	padding: 2rem;
+
+	background-color: $white-fallback;
+	background-color: $white;
+	color: $font-black-fallback;
+	color: $font-black;
+}
+
+footer {
+	z-index: 100;
 }

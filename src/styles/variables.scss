@@ -1,0 +1,75 @@
+@use "sass:map";
+@use 'sass:color';
+
+$palette: (
+    "primary": #F29F05,
+    "secondary": #DB6816,
+    "accent-primary": #83D4A9,
+    "accent-secondary": #00967D,
+    "background": #F5E7D3,
+    "white": white,
+    "black": black,
+
+    "font-primary": #2C2E33,
+    "font-secondary": #222222,
+    "font-white": white,
+    "font-black": black,
+);
+
+$theme-light: (
+    "primary": map.get($palette, "primary"),
+    "secondary": map.get($palette, "secondary"),
+    "accent-primary": map.get($palette, "accent-primary"),
+    "accent-secondary": map.get($palette, "accent-secondary"),
+    "background": map.get($palette, "background"),
+    "white": map.get($palette, "white"),
+    "black": map.get($palette, "black"),
+
+    "font-primary": map.get($palette, "font-primary"),
+    "font-secondary": map.get($palette, "font-secondary"),
+    "font-white": map.get($palette, "font-white"),
+    "font-black": map.get($palette, "font-black"),
+);
+
+$theme-dark: (
+    "primary": color.invert(map.get($palette, "primary")),
+    "secondary": color.invert(map.get($palette, "secondary")),
+    "accent-primary": color.invert(map.get($palette, "accent-primary")),
+    "accent-secondary": color.invert(map.get($palette, "accent-secondary")),
+    "background": color.invert(map.get($palette, "background")),
+    "white": color.invert(map.get($palette, "white")),
+    "black": color.invert(map.get($palette, "black")),
+
+    "font-primary": color.invert(map.get($palette, "font-primary")),
+    "font-secondary": color.invert(map.get($palette, "font-secondary")),
+    "font-white": color.invert(map.get($palette, "font-white")),
+    "font-black": color.invert(map.get($palette, "font-black")),
+);
+
+/* colors */
+$primary: light-dark(map.get($theme-light, "primary"), map.get($theme-dark, "primary"));
+$secondary: light-dark(map.get($theme-light, "secondary"), map.get($theme-dark, "secondary"));
+$accent-primary: light-dark(map.get($theme-light, "accent-primary"), map.get($theme-dark, "accent-primary"));
+$accent-secondary: light-dark(map.get($theme-light, "accent-secondary"), map.get($theme-dark, "accent-secondary"));
+$background: light-dark(map.get($theme-light, "background"), map.get($theme-dark, "background"));
+$white: light-dark(map.get($theme-light, "white"), map.get($theme-dark, "white"));
+$black: light-dark(map.get($theme-light, "black"), map.get($theme-dark, "black"));
+
+$primary-fallback: map.get($theme-light, "primary");
+$secondary-fallback: map.get($theme-light, "secondary");
+$accent-primary-fallback: map.get($theme-light, "accent-primary");
+$accent-secondary-fallback: map.get($theme-light, "accent-secondary");
+$background-fallback: map.get($theme-light, "background");
+$white-fallback: map.get($theme-light, "white");
+$black-fallback: map.get($theme-light, "black");
+
+/* fonts */
+$font-primary: light-dark(map.get($theme-light, "font-primary"), map.get($theme-dark, "font-primary"));
+$font-secondary: light-dark(map.get($theme-light, "font-secondary"), map.get($theme-dark, "font-secondary"));
+$font-white: light-dark(map.get($theme-light, "font-white"), map.get($theme-dark, "font-white"));
+$font-black: light-dark(map.get($theme-light, "font-black"), map.get($theme-dark, "font-black"));
+
+$font-primary-fallback: map.get($theme-light, "font-primary");
+$font-secondary-fallback: map.get($theme-light, "font-secondary");
+$font-white-fallback: map.get($theme-light, "font-white");
+$font-black-fallback: map.get($theme-light, "font-black");
