@@ -37,13 +37,13 @@ $theme-dark: (
     "accent-primary": color.invert(map.get($palette, "accent-primary")),
     "accent-secondary": color.invert(map.get($palette, "accent-secondary")),
     "background": color.invert(map.get($palette, "background")),
-    "white": color.invert(map.get($palette, "white")),
-    "black": color.invert(map.get($palette, "black")),
+    "white": #222222,
+    "black": #eeeeee,
 
     "font-primary": color.invert(map.get($palette, "font-primary")),
     "font-secondary": color.invert(map.get($palette, "font-secondary")),
-    "font-white": color.invert(map.get($palette, "font-white")),
-    "font-black": color.invert(map.get($palette, "font-black")),
+    "font-white": #222222,
+    "font-black": #eeeeee,
 );
 
 /* colors */
