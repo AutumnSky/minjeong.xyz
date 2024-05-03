@@ -160,6 +160,10 @@ body {
 
 header {
 	z-index: 100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 
 	-webkit-box-shadow: 0 4px 6px -6px #222;
 	-moz-box-shadow: 0 4px 6px -6px #222;
