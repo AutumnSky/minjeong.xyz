@@ -12,7 +12,7 @@ type ReleaseLink = {
     Andriod?: string
 }
 
-type Portfolio = {
+export type Portfolio = {
     role: string[]
     using: string[]
     screenshot: string[]
@@ -31,11 +31,13 @@ export default async function Portfolios() {
 
     return (
         <div className={styles.portfolios_container}>
-            {portfolios.map((portfolio) => {
-                return (
-                    <PortfoliosCard key={portfolio._id} title={portfolio.projectName.en} platforms={portfolio.tag} year={portfolio.year} />
-                )
-            })}
+            {
+                portfolios.map((portfolio) => {
+                    return (
+                        <PortfoliosCard key={portfolio._id} portfolio={portfolio} />
+                    )
+                })
+            }
         </div>
     )
 }

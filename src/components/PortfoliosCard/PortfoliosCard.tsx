@@ -1,20 +1,17 @@
 import Link from 'next/link'
 import styles from './PortfoliosCard.module.scss'
+import { Portfolio } from '@/app/portfolios/page'
 
 type Props = {
-    title: string
-    platforms: string[]
-    year: number
-    startDate?: string
-    endDate?: string
+    portfolio: Portfolio
 }
 
-export default function PortfoliosCard({ title, platforms, year, startDate, endDate }: Props) {
+export default function PortfoliosCard({ portfolio: { projectName, year } }: Props) {
     return (
         <Link href="/portfolio-details">
             <div className={styles.container}>
                 <p>
-                    {title}
+                    {projectName.en}
                 </p>
                 <p>
                     {year}

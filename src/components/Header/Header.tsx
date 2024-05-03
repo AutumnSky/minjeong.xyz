@@ -7,8 +7,6 @@ import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const pathname = usePathname()
-  console.log("^^ Header.tsx");
-
 
   return (
     <header className={styles.header}>
