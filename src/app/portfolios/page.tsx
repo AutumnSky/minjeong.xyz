@@ -25,7 +25,7 @@ type Portfolio = {
 export default async function Portfolios() {
     const data = await fetch('https://www.minjeong.xyz/data.json')
     const portfolios: Portfolio[] = await data.json()
-    console.log("^^ Server??")
+
     return (
         <>
             <div>Portfolios</div>
