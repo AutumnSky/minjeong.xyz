@@ -1,3 +1,6 @@
+import PortfoliosCard from '@/components/PortfoliosCard/PortfoliosCard'
+import styles from './page.module.scss'
+
 type ProjectName = {
     ko: string
     en: string
@@ -27,13 +30,12 @@ export default async function Portfolios() {
     const portfolios: Portfolio[] = await data.json()
 
     return (
-        <>
-            <div>Portfolios</div>
+        <div className={styles.portfolios_container}>
             {portfolios.map((portfolio) => {
                 return (
-                    <div key={portfolio._id}>{portfolio.year} - {portfolio.projectName.en}</div>
+                    <PortfoliosCard key={portfolio._id} title={portfolio.projectName.en} platforms={portfolio.tag} year={portfolio.year} />
                 )
             })}
-        </>
+        </div>
     )
 }
