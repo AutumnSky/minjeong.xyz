@@ -6,9 +6,9 @@ type Props = {
     portfolio: Portfolio
 }
 
-export default function PortfoliosCard({ portfolio: { projectName, year } }: Props) {
+export default function PortfoliosCard({ portfolio: { _id, projectName, year } }: Props) {
     return (
-        <Link href="/portfolio-details">
+        <Link href={`/portfolio-details/${_id}`}>
             <div className={styles.container}>
                 <p>
                     {projectName.en}
