@@ -42,7 +42,8 @@ export type Portfolio = {
     platforms: ProjectPlatforms[],
     tech_stack: string[],
     screenshots: string[],
-    deployed_link?: ProjectLink
+    deployed_link?: ProjectLink,
+    description: string
 }
 
 export default async function getPortfolios(): Promise<Portfolio[]> {
