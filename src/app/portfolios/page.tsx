@@ -6,27 +6,50 @@ type ProjectName = {
     en: string
 }
 
-type ReleaseLink = {
-    web?: string
-    iOS?: string
-    Andriod?: string
+enum ProjectCategory {
+    Personal = "personal",
+    External = "external"
+}
+
+enum ProjectType {
+    Frontend = "frontend",
+    Backend = "backend"
+}
+
+type ProjectDate = {
+    year: number,
+    month?: number
+}
+
+enum ProjectPlatforms {
+    Web = "Web",
+    iPhone = "iPhone",
+    iPad = "iPad"
+}
+
+type ProjectLink = {
+    web?: string,
+    ios?: string,
+    android?: string
 }
 
 export type Portfolio = {
-    role: string[]
-    using: string[]
-    screenshot: string[]
-    _id: string
-    projectName: ProjectName
-    year: number
-    from: string
-    to: string
-    tag: string[]
-    participation: number
+    id: number,
+    name: ProjectName,
+    category: ProjectCategory,
+    type: ProjectType,
+    participation: number,
+    company: string,
+    start_date: ProjectDate,
+    end_date?: ProjectDate,
+    platforms: ProjectPlatforms[],
+    tech_stack: string[],
+    screenshots: string[],
+    deployed_link: ProjectLink
 }
 
 export default async function Portfolios() {
-    const data = await fetch('https://www.minjeong.xyz/data.json')
+    const data = await fetch('https://www.minjeong.xyz/data/portfolios.json')
     const portfolios: Portfolio[] = await data.json()
 
     return (
@@ -34,7 +57,7 @@ export default async function Portfolios() {
             {
                 portfolios.map((portfolio) => {
                     return (
-                        <PortfoliosCard key={portfolio._id} portfolio={portfolio} />
+                        <PortfoliosCard key={portfolio.id} portfolio={portfolio} />
                     )
                 })
             }

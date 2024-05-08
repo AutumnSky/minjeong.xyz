@@ -6,15 +6,15 @@ type Props = {
     portfolio: Portfolio
 }
 
-export default function PortfoliosCard({ portfolio: { _id, projectName, year } }: Props) {
+export default function PortfoliosCard({ portfolio }: Props) {
     return (
-        <Link href={`/portfolio-details/${_id}`}>
+        <Link href={`/portfolio-details/${portfolio.id}`}>
             <div className={styles.container}>
                 <p>
-                    {projectName.en}
+                    {portfolio.name.en}
                 </p>
                 <p>
-                    {year}
+                    {portfolio.start_date.year}
                 </p>
             </div>
         </Link>
