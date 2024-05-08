@@ -156,6 +156,7 @@ body {
 	flex-direction: column;
 	align-items: left;
 	min-height: 100vh;
+	overscroll-behavior: none;
 }
 
 header {
