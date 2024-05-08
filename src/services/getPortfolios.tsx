@@ -30,7 +30,7 @@ type ProjectLink = {
     android?: string
 }
 
-type Portfolio = {
+export type Portfolio = {
     id: number,
     name: ProjectName,
     category: ProjectCategory,

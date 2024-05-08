@@ -1,4 +1,5 @@
 import getPortfolios from '../../../services/getPortfolios'
+import styles from './page.module.scss'
 
 export default async function PortfolioDetails({ params }: { params: { id: string } }) {
     const portfolios = await getPortfolios()
@@ -10,12 +11,12 @@ export default async function PortfolioDetails({ params }: { params: { id: strin
     }
 
     return (
-        <div>
-            <p>
+        <div className={styles.container}>
+            <h1 className={styles.name}>
                 {portfolio.name.en}
-            </p>
+            </h1>
             <p>
-                {portfolio.category}
+                {portfolio.description}
             </p>
             <p>
                 {portfolio.type}

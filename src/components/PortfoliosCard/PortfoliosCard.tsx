@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import styles from './PortfoliosCard.module.scss'
-import { Portfolio } from '@/app/portfolios/page'
+import { Portfolio } from '../../services/getPortfolios'
 
 type Props = {
     portfolio: Portfolio
