@@ -8,7 +8,6 @@
     "category": "personal",
     "type": "frontend",
     "participation": 100,
-    "company": "",
     "start_date": {
       "year": 2018,
       "month": 1
@@ -40,7 +39,6 @@
     "category": "personal",
     "type": "frontend",
     "participation": 100,
-    "company": "",
     "start_date": {
       "year": 2018,
       "month": 12
@@ -64,8 +62,7 @@
       "wetube02.png",
       "wetube03.png",
       "wetube04.png"
-    ],
-    "deployed_link": []
+    ]
   },
   {
     "id": 28,
@@ -76,7 +73,6 @@
     "category": "personal",
     "type": "frontend",
     "participation": 100,
-    "company": "",
     "start_date": {
       "year": 2018,
       "month": 2
@@ -105,7 +101,6 @@
     "category": "personal",
     "type": "frontend",
     "participation": 100,
-    "company": "",
     "start_date": {
       "year": 2019,
       "month": 3
@@ -119,8 +114,7 @@
     ],
     "screenshots": [
       "profilepage.png"
-    ],
-    "deployed_link": []
+    ]
   },
   {
     "id": 26,
@@ -143,8 +137,7 @@
     "platforms": [
       "iPhone"
     ],
-    "tech_stack": [
-    ],
+    "tech_stack": [],
     "screenshots": [
       "paige01.png",
       "paige02.png",
@@ -208,8 +201,7 @@
     "platforms": [
       "iPhone"
     ],
-    "tech_stack": [
-    ],
+    "tech_stack": [],
     "screenshots": [
       "whacano01.png",
       "whacano02.png",
@@ -245,8 +237,7 @@
     "platforms": [
       "iPhone"
     ],
-    "tech_stack": [
-    ],
+    "tech_stack": [],
     "screenshots": [
       "mtalk01.png",
       "mtalk02.png",
@@ -296,7 +287,6 @@
     "category": "personal",
     "type": "fullstack",
     "participation": 100,
-    "company": "",
     "start_date": {
       "year": 2016,
       "month": 12
@@ -453,11 +443,10 @@
       "iPhone",
       "iPad"
     ],
-    "tech_stack": [
-    ],
+    "tech_stack": [],
     "screenshots": [
-        "tving01.png",
-        "tving02.png"
+      "tving01.png",
+      "tving02.png"
     ],
     "deployed_link": {
       "ios": "https://itunes.apple.com/kr/app/티빙-tving/id400101401"
@@ -489,8 +478,8 @@
       "iOS Safari Extension"
     ],
     "screenshots": [
-        "autoscroll01.jpg",
-        "autoscroll02.jpg"
+      "autoscroll01.jpg",
+      "autoscroll02.jpg"
     ],
     "deployed_link": {
       "ios": "https://itunes.apple.com/us/app/autoscrollweb/id1173753941?l=ko&ls=1&mt=8"
@@ -521,9 +510,9 @@
       "Cocos2D"
     ],
     "screenshots": [
-        "ncscience04_01.jpg",
-        "ncscience04_02.jpg",
-        "ncscience04_03.jpg"
+      "ncscience04_01.jpg",
+      "ncscience04_02.jpg",
+      "ncscience04_03.jpg"
     ],
     "deployed_link": {
       "ios": "https://itunes.apple.com/kr/app/jaemiissneun-mullibaeggwa/id1042941550?mt=8"
@@ -554,9 +543,9 @@
       "Cocos2D"
     ],
     "screenshots": [
-        "ncscience03_01.jpg",
-        "ncscience03_02.jpg",
-        "ncscience03_03.jpg"
+      "ncscience03_01.jpg",
+      "ncscience03_02.jpg",
+      "ncscience03_03.jpg"
     ],
     "deployed_link": {
       "ios": "https://itunes.apple.com/kr/app/jaemiissneun-mullibaeggwa/id1024305072?mt=8"
@@ -583,13 +572,12 @@
     "platforms": [
       "Android"
     ],
-    "tech_stack": [
-    ],
+    "tech_stack": [],
     "screenshots": [
-        "worldmap01.jpg",
-        "worldmap02.jpg",
-        "worldmap03.jpg",
-        "worldmap04.jpg"
+      "worldmap01.jpg",
+      "worldmap02.jpg",
+      "worldmap03.jpg",
+      "worldmap04.jpg"
     ],
     "deployed_link": {
       "android": "Kyowon Private Platform"
@@ -616,13 +604,12 @@
     "platforms": [
       "iPhone"
     ],
-    "tech_stack": [
-    ],
+    "tech_stack": [],
     "screenshots": [
-        "esco01.jpg",
-        "esco02.jpg",
-        "esco03.jpg",
-        "esco04.jpg"
+      "esco01.jpg",
+      "esco02.jpg",
+      "esco03.jpg",
+      "esco04.jpg"
     ],
     "deployed_link": {
       "ios": "https://itunes.apple.com/us/app/esco/id998832032?l=ko&ls=1&mt=8"
@@ -649,13 +636,12 @@
     "platforms": [
       "iPhone"
     ],
-    "tech_stack": [
-    ],
+    "tech_stack": [],
     "screenshots": [
-        "wipoint1.png",
-        "wipoint2.png",
-        "wipoint3.png",
-        "wipoint4.png"
+      "wipoint1.png",
+      "wipoint2.png",
+      "wipoint3.png",
+      "wipoint4.png"
     ],
     "deployed_link": {
       "ios": "https://itunes.apple.com/kr/app/wipointeu/id1070715498?mt=8"
@@ -687,12 +673,12 @@
       "Unity"
     ],
     "screenshots": [
-        "cooking00.jpg",
-        "cooking01.jpg",
-        "cooking02.jpg",
-        "cooking05.jpg",
-        "cooking06.jpg",
-        "cooking07.jpg"
+      "cooking00.jpg",
+      "cooking01.jpg",
+      "cooking02.jpg",
+      "cooking05.jpg",
+      "cooking06.jpg",
+      "cooking07.jpg"
     ],
     "deployed_link": {
       "ios": "https://itunes.apple.com/us/app/yolisaga-doellaeyo/id1071182261?l=ko&ls=1&mt=8",
@@ -725,12 +711,12 @@
       "Unity"
     ],
     "screenshots": [
-        "manitoybooks01.jpg",
-        "manitoybooks02.jpg",
-        "manitoybooks03.jpg",
-        "manitoybooks04.jpg",
-        "manitoybooks05.jpg",
-        "manitoybooks06.jpg"
+      "manitoybooks01.jpg",
+      "manitoybooks02.jpg",
+      "manitoybooks03.jpg",
+      "manitoybooks04.jpg",
+      "manitoybooks05.jpg",
+      "manitoybooks06.jpg"
     ],
     "deployed_link": {
       "ios": "https://itunes.apple.com/mn/app/manitoybooks/id939932519?mt=8"
@@ -763,13 +749,13 @@
       "Unity"
     ],
     "screenshots": [
-        "speedmatch01.png",
-        "speedmatch02.png",
-        "speedmatch03.png",
-        "speedmatch04.png",
-        "speedmatch05.png",
-        "speedmatch06.png",
-        "speedmatch07.png"
+      "speedmatch01.png",
+      "speedmatch02.png",
+      "speedmatch03.png",
+      "speedmatch04.png",
+      "speedmatch05.png",
+      "speedmatch06.png",
+      "speedmatch07.png"
     ],
     "deployed_link": {
       "ios": "https://itunes.apple.com/mn/app/manitoy-speed-match/id964397745?mt=8"
@@ -796,8 +782,8 @@
       "Unity"
     ],
     "screenshots": [
-        "swingduckie1.jpg",
-        "swingduckie2.jpg"
+      "swingduckie1.jpg",
+      "swingduckie2.jpg"
     ],
     "deployed_link": {
       "ios": "https://itunes.apple.com/kr/app/swing-duckie/id913430136?mt=8"
@@ -828,10 +814,10 @@
       "Unity"
     ],
     "screenshots": [
-        "allng01.png",
-        "allng02.png",
-        "allng03.png",
-        "allng04.png"
+      "allng01.png",
+      "allng02.png",
+      "allng03.png",
+      "allng04.png"
     ],
     "deployed_link": {
       "android": "kyowon private platform"
@@ -846,7 +832,6 @@
     "category": "personal",
     "type": "frontend",
     "participation": 100,
-    "company": "",
     "start_date": {
       "year": 2014,
       "month": 4
@@ -862,11 +847,11 @@
       "Unity"
     ],
     "screenshots": [
-        "sokoban01.webp",
-        "sokoban02.webp",
-        "sokoban03.webp",
-        "sokoban04.webp",
-        "sokoban05.webp"
+      "sokoban01.webp",
+      "sokoban02.webp",
+      "sokoban03.webp",
+      "sokoban04.webp",
+      "sokoban05.webp"
     ],
     "deployed_link": {
       "android": "https://play.google.com/store/apps/details?id=com.duckinthedarkhole.socoban"
@@ -888,11 +873,10 @@
     "platforms": [
       "Android"
     ],
-    "tech_stack": [
-    ],
+    "tech_stack": [],
     "screenshots": [
-        "itutor01.png",
-        "itutor02.png"
+      "itutor01.png",
+      "itutor02.png"
     ],
     "deployed_link": {
       "android": "Private App Store"
@@ -918,9 +902,9 @@
       "Cocos2D"
     ],
     "screenshots": [
-        "wjscience01.png",
-        "wjscience02.png",
-        "wjscience04.png"
+      "wjscience01.png",
+      "wjscience02.png",
+      "wjscience04.png"
     ]
   },
   {
@@ -939,12 +923,11 @@
     "platforms": [
       "iPad"
     ],
-    "tech_stack": [
-    ],
+    "tech_stack": [],
     "screenshots": [
-        "jcchurch01.png",
-        "jcchurch02.png",
-        "jcchurch03.png"
+      "jcchurch01.png",
+      "jcchurch02.png",
+      "jcchurch03.png"
     ],
     "deployed_link": {
       "ios": "https://itunes.apple.com/jo/app/jangchoongchurch/id542308887?mt=8"
@@ -970,9 +953,9 @@
       "Cocos2D"
     ],
     "screenshots": [
-        "booklike01.png",
-        "booklike02.png",
-        "booklike03.png"
+      "booklike01.png",
+      "booklike02.png",
+      "booklike03.png"
     ],
     "deployed_link": {
       "ios": "https://app.sensortower.com/overview/492211663?country=KR"
