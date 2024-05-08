@@ -1,4 +1,4 @@
-import getPortfolios from '../../../services/getPortfolios'
+import getPortfolios, { Portfolio } from '../../../services/getPortfolios'
 import styles from './page.module.scss'
 
 export default async function PortfolioDetails({ params }: { params: { id: string } }) {
@@ -12,39 +12,84 @@ export default async function PortfolioDetails({ params }: { params: { id: strin
 
     return (
         <div className={styles.container}>
-            <h1 className={styles.name}>
-                {portfolio.name.en}
-            </h1>
+            <div className={styles.title}>
+                <h1 className={styles.name}>{portfolio.name.en}</h1>
+                <span className={styles.project_type}>{portfolio.type}</span>
+            </div>
             <p>
-                {portfolio.description}
+                Participation: {portfolio.participation}%
             </p>
             <p>
-                {portfolio.type}
+                {
+                    portfolio.company ? (
+                        portfolio.company === "freelancer" ? (<span>Freelance Job</span>) :
+                            <span>Worked for {portfolio.company}</span>
+                    ) :
+                        (<span>Personal Project</span>)
+                }
             </p>
             <p>
-                {portfolio.participation}
+                Period: {portfolio.start_date.year}.{portfolio.start_date.month}
+                {
+                    portfolio.end_date ? (
+                        <>
+                            &nbsp; ~ {portfolio.end_date?.year}.{portfolio.end_date?.month}
+                        </>
+                    ) :
+                        null
+                }
             </p>
             <p>
-                {portfolio.company}
+                Platforms: {portfolio.platforms.join(', ')}
             </p>
-            <p>
-                {portfolio.start_date.year} {portfolio.start_date.month}
-            </p>
-            <p>
-                {portfolio.end_date?.year} {portfolio.end_date?.month}
-            </p>
-            <p>
-                {portfolio.platforms}
-            </p>
-            <p>
-                {portfolio.tech_stack}
-            </p>
-            <p>
-                {portfolio.screenshots}
-            </p>
-            <p>
-                {portfolio.deployed_link?.ios}
-            </p>
+            {
+                portfolio.tech_stack.length != 0 ?
+                    (<p>Tech Stack: {portfolio.tech_stack.join(', ')}</p>)
+                    : null
+            }
+            {
+                portfolio.screenshots.length != 0 ?
+                    (
+                        <div className={styles.screenshots}>
+                            {
+                                portfolio.screenshots.map((screenshot, index) => (
+                                    <img
+                                        key={index}
+                                        src={"/imgs/portfolios/" + screenshot}
+                                        width={200}
+                                        alt="portfolio image"
+                                    />
+                                ))
+                            }
+                        </div>
+                    ) :
+                    null
+            }
+
+            {
+                (portfolio.deployed_link?.ios || portfolio.deployed_link?.android || portfolio.deployed_link?.web) ?
+                    (
+                        <div className={styles.download_links}>
+                            Download Links:
+                            {
+                                portfolio.deployed_link?.ios ? (
+                                    <a href={portfolio.deployed_link?.ios}>App Store (iOS)</a>
+                                ) : null
+                            }
+                            {
+                                portfolio.deployed_link?.android ? (
+                                    <a href={portfolio.deployed_link?.android}>Google Play Store</a>
+                                ) : null
+                            }
+                            {
+                                portfolio.deployed_link?.web ? (
+                                    <a href={portfolio.deployed_link?.web}>Website</a>
+                                ) : null
+                            }
+                        </div>
+                    )
+                    : null
+            }
         </div>
     )
 }
