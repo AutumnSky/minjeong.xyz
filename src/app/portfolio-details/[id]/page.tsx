@@ -48,25 +48,6 @@ export default async function PortfolioDetails({ params }: { params: { id: strin
                     : null
             }
             {
-                portfolio.screenshots.length != 0 ?
-                    (
-                        <div className={styles.screenshots}>
-                            {
-                                portfolio.screenshots.map((screenshot, index) => (
-                                    <img
-                                        key={index}
-                                        src={"/imgs/portfolios/" + screenshot}
-                                        width={200}
-                                        alt="portfolio image"
-                                    />
-                                ))
-                            }
-                        </div>
-                    ) :
-                    null
-            }
-
-            {
                 (portfolio.deployed_link?.ios || portfolio.deployed_link?.android || portfolio.deployed_link?.web) ?
                     (
                         <div className={styles.download_links}>
@@ -89,6 +70,24 @@ export default async function PortfolioDetails({ params }: { params: { id: strin
                         </div>
                     )
                     : null
+            }
+            {
+                portfolio.screenshots.length != 0 ?
+                    (
+                        <div className={styles.screenshots}>
+                            {
+                                portfolio.screenshots.map((screenshot, index) => (
+                                    <img
+                                        key={index}
+                                        src={"/imgs/portfolios/" + screenshot}
+                                        width={200}
+                                        alt="portfolio image"
+                                    />
+                                ))
+                            }
+                        </div>
+                    ) :
+                    null
             }
         </div>
     )
