@@ -7,13 +7,18 @@ export default async function Portfolios() {
 
     return (
         <div className={styles.portfolios_container}>
-            {
-                portfolios.map((portfolio) => {
-                    return (
-                        <PortfoliosCard key={portfolio.id} portfolio={portfolio} />
-                    )
-                })
-            }
+            <div className={styles.timeline}>
+
+            </div>
+            <div className={styles.card_list}>
+                {
+                    portfolios.map((portfolio) => {
+                        return (
+                            <PortfoliosCard key={portfolio.id} portfolio={portfolio} />
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }

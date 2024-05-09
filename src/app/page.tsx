@@ -1,9 +1,9 @@
-import Link from 'next/link'
 import Image from 'next/image'
+import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.container}>
       <div>
         <p>Minjeong Kim / F / South Korea</p>
         <p>Software Engineer living in Ireland</p>

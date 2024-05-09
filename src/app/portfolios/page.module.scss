@@ -1,5 +1,22 @@
 .portfolios_container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     row-gap: 1rem;
+}
+
+.timeline {
+    width: 10%;
+    min-height: 100%;
+    border-right: 5px solid $primary-fallback;
+    border-right: 5px solid $primary;
+}
+
+.card_list {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.2rem;
 }
