@@ -30,6 +30,8 @@
 
     overflow: hidden;
 
+    min-width: 600px;
+
     -webkit-box-shadow: 5px 5px 0px 0px $background;
     -moz-box-shadow: 5px 5px 0px 0px $background;
     box-shadow: 5px 5px 0px 0px $background;
@@ -45,13 +47,14 @@
     display: flex;
     flex-direction: column;
     padding: 1.2rem;
+    padding-right: 2rem;
     justify-content: space-around;
 }
 
 .platforms {
     display: flex;
     flex-direction: row;
-    gap: 0.8rem;
+    column-gap: 0.8rem;
 }
 
 .platform_icon {
