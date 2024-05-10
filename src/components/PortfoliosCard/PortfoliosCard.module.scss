@@ -32,6 +32,9 @@
 
     min-width: 600px;
 
+    -webkit-box-shadow: 5px 5px 0px 0px $background-fallback;
+    -moz-box-shadow: 5px 5px 0px 0px $background-fallback;
+    box-shadow: 5px 5px 0px 0px $background-fallback;
     -webkit-box-shadow: 5px 5px 0px 0px $background;
     -moz-box-shadow: 5px 5px 0px 0px $background;
     box-shadow: 5px 5px 0px 0px $background;
