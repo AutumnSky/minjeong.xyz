@@ -2,11 +2,11 @@
     all: unset;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    column-gap: 50px;
+    align-items: top;
+    column-gap: 25px;
 
     position: relative;
-    left: -75px;
+    left: -65px;
 
     &:hover {
         cursor: pointer;
@@ -20,6 +20,9 @@
 
     width: 50px;
     text-align: right;
+
+    position: sticky;
+    top: 130px;
 }
 
 .container {
