@@ -1,9 +1,25 @@
 .link {
     all: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 50px;
+
+    position: relative;
+    left: -75px;
 
     &:hover {
         cursor: pointer;
     }
+}
+
+.month {
+    color: $primary-fallback;
+    color: $primary;
+    font-size: 1.2rem;
+
+    width: 50px;
+    text-align: right;
 }
 
 .container {

@@ -6,7 +6,7 @@ export default async function Portfolios() {
     const portfolios = await getPortfolios()
 
     return (
-        <div className={styles.portfolios_container}>
+        <div className={styles.container}>
             <div className={styles.timeline}>
 
             </div>

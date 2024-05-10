@@ -1,4 +1,4 @@
-.portfolios_container {
+.container {
     display: flex;
     flex-direction: row;
     row-gap: 1rem;
@@ -14,7 +14,7 @@
 .card_list {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding-left: 1rem;
+    padding-left: 0;
     padding-right: 2rem;
     display: flex;
     flex-direction: column;
