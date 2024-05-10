@@ -19,6 +19,20 @@
 
 .details {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 1.2rem;
+    row-gap: 0.5rem;
+}
+
+.platforms {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+}
+
+.platform_icon {
+    color: $accent-primary-fallback;
+    color: $accent-primary;
+    font-size: 1.4rem;
+
 }
