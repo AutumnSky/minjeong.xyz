@@ -36,11 +36,7 @@ export default function PortfoliosCard({ portfolio }: Props) {
     )
 }
 
-function monthToString(month?: number): string | null {
-    if (!month) {
-        return null
-    }
-
+function monthToString(month: number): string | null {
     switch (month) {
         case 1: return 'Jan'
         case 2: return 'Feb'

@@ -795,7 +795,8 @@
     "participation": 100,
     "company": "LayerLab",
     "start_date": {
-      "year": 2014
+      "year": 2014,
+      "month": 8
     },
     "platforms": [
       "iPhone",
@@ -894,7 +895,8 @@
     "participation": 70,
     "company": "MotionBlue",
     "start_date": {
-      "year": 2013
+      "year": 2013,
+      "month": 9
     },
     "platforms": [
       "Android"
@@ -920,7 +922,8 @@
     "participation": 100,
     "company": "MotionBlue",
     "start_date": {
-      "year": 2012
+      "year": 2012,
+      "month": 1
     },
     "platforms": [
       "iPad"
@@ -946,7 +949,8 @@
     "participation": 50,
     "company": "MotionBlue",
     "start_date": {
-      "year": 2012
+      "year": 2012,
+      "month": 5
     },
     "platforms": [
       "iPad"
@@ -973,7 +977,8 @@
     "participation": 30,
     "company": "MotionBlue",
     "start_date": {
-      "year": 2011
+      "year": 2011,
+      "month": 7
     },
     "platforms": [
       "iPad"

@@ -15,7 +15,7 @@ enum ProjectType {
 
 type ProjectDate = {
     year: number,
-    month?: number
+    month: number
 }
 
 enum ProjectPlatforms {
