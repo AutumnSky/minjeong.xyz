@@ -305,7 +305,7 @@
     },
     "platforms": [
       "ios",
-      "server"
+      "backend"
     ],
     "tech_stack": [
       "Node.js"
@@ -340,7 +340,7 @@
     },
     "platforms": [
       "ios",
-      "server"
+      "backend"
     ],
     "tech_stack": [
       "Java Spring Boot"
