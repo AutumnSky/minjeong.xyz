@@ -66,7 +66,7 @@ function groupPortfolios(portfolios: Portfolio[]): PortfolioGroupByYear[] {
 
     groups.forEach(groups => {
         // descending by month
-        groups.portfolios.sort((a, b) => b.start_date.year - a.start_date.year)
+        groups.portfolios.sort((a, b) => b.start_date.month - a.start_date.month)
     })
 
     return groups;
