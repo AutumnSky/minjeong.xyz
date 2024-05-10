@@ -18,10 +18,11 @@ type ProjectDate = {
     month: number
 }
 
-enum ProjectPlatforms {
-    Web = "Web",
-    iPhone = "iPhone",
-    iPad = "iPad"
+export enum ProjectPlatforms {
+    WEB = "web",
+    iOS = "ios",
+    ANDROID = "android",
+    BACKEND = "backend",
 }
 
 type ProjectLink = {

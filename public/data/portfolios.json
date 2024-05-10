@@ -13,7 +13,7 @@
       "month": 1
     },
     "platforms": [
-      "Web"
+      "web"
     ],
     "tech_stack": [
       "HTML",
@@ -49,7 +49,7 @@
       "month": 1
     },
     "platforms": [
-      "Web"
+      "web"
     ],
     "tech_stack": [
       "HTML",
@@ -80,7 +80,7 @@
       "month": 2
     },
     "platforms": [
-      "Web"
+      "web"
     ],
     "tech_stack": [
       "React"
@@ -109,7 +109,7 @@
       "month": 3
     },
     "platforms": [
-      "Web"
+      "web"
     ],
     "tech_stack": [
       "React",
@@ -139,7 +139,7 @@
       "month": 1
     },
     "platforms": [
-      "iPhone"
+      "ios"
     ],
     "tech_stack": [],
     "screenshots": [
@@ -171,7 +171,7 @@
       "month": 10
     },
     "platforms": [
-      "iPhone"
+      "ios"
     ],
     "tech_stack": [
       "Webview Based Hybrid App"
@@ -205,7 +205,7 @@
       "month": 12
     },
     "platforms": [
-      "iPhone"
+      "ios"
     ],
     "tech_stack": [],
     "screenshots": [
@@ -242,7 +242,7 @@
       "month": 8
     },
     "platforms": [
-      "iPhone"
+      "ios"
     ],
     "tech_stack": [],
     "screenshots": [
@@ -271,8 +271,7 @@
       "month": 1
     },
     "platforms": [
-      "iPhone",
-      "iPad"
+      "ios"
     ],
     "tech_stack": [
       "iOS Safari Extension"
@@ -305,9 +304,8 @@
       "month": 8
     },
     "platforms": [
-      "iPhone",
-      "iPad",
-      "Backend Server"
+      "ios",
+      "server"
     ],
     "tech_stack": [
       "Node.js"
@@ -341,9 +339,8 @@
       "month": 3
     },
     "platforms": [
-      "iPhone",
-      "iPad",
-      "Backend Server"
+      "ios",
+      "server"
     ],
     "tech_stack": [
       "Java Spring Boot"
@@ -378,8 +375,8 @@
       "month": 5
     },
     "platforms": [
-      "iPhone",
-      "Android"
+      "ios",
+      "android"
     ],
     "tech_stack": [
       "Unity"
@@ -414,8 +411,8 @@
       "month": 5
     },
     "platforms": [
-      "iPhone",
-      "Android"
+      "ios",
+      "android"
     ],
     "tech_stack": [
       "Unity"
@@ -453,8 +450,7 @@
       "month": 1
     },
     "platforms": [
-      "iPhone",
-      "iPad"
+      "ios"
     ],
     "tech_stack": [],
     "screenshots": [
@@ -485,8 +481,7 @@
       "month": 1
     },
     "platforms": [
-      "iPhone",
-      "iPad"
+      "ios"
     ],
     "tech_stack": [
       "iOS Safari Extension"
@@ -587,7 +582,7 @@
       "month": 10
     },
     "platforms": [
-      "Android"
+      "android"
     ],
     "tech_stack": [],
     "screenshots": [
@@ -620,7 +615,7 @@
       "month": 6
     },
     "platforms": [
-      "iPhone"
+      "ios"
     ],
     "tech_stack": [],
     "screenshots": [
@@ -653,7 +648,7 @@
       "month": 12
     },
     "platforms": [
-      "iPhone"
+      "ios"
     ],
     "tech_stack": [],
     "screenshots": [
@@ -687,7 +682,7 @@
     },
     "platforms": [
       "iPad",
-      "Android"
+      "android"
     ],
     "tech_stack": [
       "Unity"
@@ -725,8 +720,7 @@
       "month": 12
     },
     "platforms": [
-      "iPhone",
-      "iPad"
+      "ios"
     ],
     "tech_stack": [
       "Unity"
@@ -763,9 +757,8 @@
       "month": 7
     },
     "platforms": [
-      "iPhone",
-      "iPad",
-      "Android"
+      "ios",
+      "android"
     ],
     "tech_stack": [
       "Unity"
@@ -799,8 +792,7 @@
       "month": 8
     },
     "platforms": [
-      "iPhone",
-      "iPad"
+      "ios"
     ],
     "tech_stack": [
       "Unity"
@@ -833,7 +825,7 @@
       "month": 5
     },
     "platforms": [
-      "Android"
+      "android"
     ],
     "tech_stack": [
       "Unity"
@@ -867,7 +859,7 @@
       "month": 5
     },
     "platforms": [
-      "Android"
+      "android"
     ],
     "tech_stack": [
       "Unity"
@@ -899,7 +891,7 @@
       "month": 9
     },
     "platforms": [
-      "Android"
+      "android"
     ],
     "tech_stack": [],
     "screenshots": [

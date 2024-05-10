@@ -3,7 +3,8 @@ import styles from './PortfoliosCard.module.scss'
 import { Portfolio } from '../../services/getPortfolios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faApple, faAndroid } from '@fortawesome/free-brands-svg-icons'
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faGlobe, faServer } from '@fortawesome/free-solid-svg-icons'
+import { ProjectPlatforms } from '../../services/getPortfolios'
 
 type Props = {
     portfolio: Portfolio
@@ -22,9 +23,26 @@ export default function PortfoliosCard({ portfolio }: Props) {
                 />
                 <div className={styles.details}>
                     <div className={styles.platforms}>
-                        <FontAwesomeIcon className={styles.platform_icon} icon={faApple} />
-                        <FontAwesomeIcon className={styles.platform_icon} icon={faAndroid} />
-                        <FontAwesomeIcon className={styles.platform_icon} icon={faGlobe} />
+                        {
+                            portfolio.platforms.includes(ProjectPlatforms.iOS) ? (
+                                <FontAwesomeIcon className={styles.platform_icon} icon={faApple} />
+                            ) : null
+                        }
+                        {
+                            portfolio.platforms.includes(ProjectPlatforms.ANDROID) ? (
+                                <FontAwesomeIcon className={styles.platform_icon} icon={faAndroid} />
+                            ) : null
+                        }
+                        {
+                            portfolio.platforms.includes(ProjectPlatforms.WEB) ? (
+                                <FontAwesomeIcon className={styles.platform_icon} icon={faGlobe} />
+                            ) : null
+                        }
+                        {
+                            portfolio.platforms.includes(ProjectPlatforms.BACKEND) ? (
+                                <FontAwesomeIcon className={styles.platform_icon} icon={faServer} />
+                            ) : null
+                        }
                     </div>
                     <p className={styles.name}>{portfolio.name.en}</p>
                     <p className={styles.more}>...more</p>
