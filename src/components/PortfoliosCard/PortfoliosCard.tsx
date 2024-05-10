@@ -16,12 +16,10 @@ export default function PortfoliosCard({ portfolio }: Props) {
                 {monthToString(portfolio.start_date.month)}
             </p>
             <div className={styles.container}>
-                <div>
-                    <img className={styles.thumbnail}
-                        src={"/imgs/portfolios/" + portfolio.screenshots[0]}
-                        alt="portfolio image"
-                    />
-                </div>
+                <img className={styles.thumbnail}
+                    src={"/imgs/portfolios/" + portfolio.screenshots[0]}
+                    alt="portfolio image"
+                />
                 <div className={styles.details}>
                     <div className={styles.platforms}>
                         <FontAwesomeIcon className={styles.platform_icon} icon={faApple} />
