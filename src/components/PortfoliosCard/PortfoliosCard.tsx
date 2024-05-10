@@ -11,7 +11,7 @@ type Props = {
 
 export default function PortfoliosCard({ portfolio }: Props) {
     return (
-        <Link href={`/portfolio-details/${portfolio.id}`}>
+        <Link className={styles.link} href={`/portfolio-details/${portfolio.id}`}>
             <div className={styles.container}>
                 <div>
                     <img className={styles.thumbnail}
@@ -25,10 +25,8 @@ export default function PortfoliosCard({ portfolio }: Props) {
                         <FontAwesomeIcon className={styles.platform_icon} icon={faAndroid} />
                         <FontAwesomeIcon className={styles.platform_icon} icon={faGlobe} />
                     </div>
-                    Lorem ipsum, dolor sit amet
-                    <br />consectetur adipisicing elit. Pariatur
-                    <br /> tempore amet corrupti deleniti odio
-                    <br />accusamus excepturi? Explicabo dolore
+                    <p className={styles.name}>{portfolio.name.en}</p>
+                    <p className={styles.more}>...more</p>
                 </div>
             </div>
         </Link>

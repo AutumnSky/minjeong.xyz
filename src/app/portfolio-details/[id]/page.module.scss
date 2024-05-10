@@ -1,3 +1,7 @@
+.link {
+    text-decoration: "none"
+}
+
 .container {
     padding: 2rem;
     padding-top: 0;
@@ -19,8 +23,8 @@
 }
 
 .name {
-    color: $font-secondary-fallback;
-    color: $font-secondary;
+    color: $font-primary-fallback;
+    color: $font-primary;
 }
 
 .project_type {
