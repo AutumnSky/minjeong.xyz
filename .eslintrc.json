@@ -25,6 +25,14 @@
             "case": "camel",
             "target": "**/providers/**",
             "patterns": "^[a-zA-Z]*Provider"
+          },
+          {
+            "case": "camel",
+            "target": "**/services/**"
+          },
+          {
+            "case": "camel",
+            "target": "**/lib/**"
           }
         ]
       }
