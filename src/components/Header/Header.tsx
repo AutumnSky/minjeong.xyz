@@ -10,18 +10,20 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logos}>
-        <Image
-          className={styles.logos_profile}
-          src={`/imgs/me.jpeg`}
-          width="60"
-          height="60"
-          alt="me" />
-        <p className={styles.logos_name}>Minjeong Kim</p>
-      </div>
-      <div className={styles.menus}>
-        <Menu link="/" title="About Me" isSelected={pathname === '/'} />
-        <Menu link="/portfolios" title="Careers & Portfolios" isSelected={pathname === '/portfolios'} />
+      <div className={styles.container}>
+        <div className={styles.logos}>
+          <Image
+            className={styles.logos_profile}
+            src={`/imgs/me.jpeg`}
+            width="60"
+            height="60"
+            alt="me" />
+          <p className={styles.logos_name}>Minjeong Kim</p>
+        </div>
+        <div className={styles.menus}>
+          <Menu link="/" title="About Me" isSelected={pathname === '/'} />
+          <Menu link="/portfolios" title="Careers & Portfolios" isSelected={pathname === '/portfolios'} />
+        </div>
       </div>
     </header>
   );

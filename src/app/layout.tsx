@@ -1,7 +1,7 @@
-import type { Metadata } from "next"
+import type { Metadata } from 'next'
 import "./globals.scss"
-import Header from "@/components/Header/Header"
-import Footer from "@/components/Footer/Footer"
+import Header from '@/components/Header/Header'
+import Footer from '@/components/Footer/Footer'
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -21,9 +21,13 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        <section>{children}</section>
+        <div className='section_container'>
+          <section>
+            {children}
+          </section>
+        </div>
         <Footer />
       </body>
-    </html>
+    </html >
   );
 }

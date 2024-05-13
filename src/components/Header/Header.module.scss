@@ -6,8 +6,8 @@
     width: 100wh;
     padding-left: 1.5rem;
     padding-top: 1rem;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
 
     @include simple-screen {
         padding-right: 1.5rem;
@@ -16,6 +16,15 @@
     @include rich-screen {
         padding-right: 4rem;
     }
+}
+
+.container {
+    max-width: $layout-breakpoint-maximum;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logos {

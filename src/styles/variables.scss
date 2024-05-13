@@ -76,6 +76,7 @@ $font-black-fallback: map.get($theme-light, "font-black");
 
 /* Responsive Layout */
 $layout-breakpoint-simple: 900px;
+$layout-breakpoint-maximum: 1400px;
 
 @mixin simple-screen {
     @media (max-width: #{$layout-breakpoint-simple}) {
