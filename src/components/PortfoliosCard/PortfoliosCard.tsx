@@ -12,7 +12,7 @@ type Props = {
 
 export default function PortfoliosCard({ portfolio }: Props) {
     return (
-        <Link className={styles.link} href={`/portfolio-details/${portfolio.id}`}>
+        <Link className={styles.link} href={`/portfolios/${portfolio.id}`}>
             <div>
                 <p className={styles.month}>
                     {monthToString(portfolio.start_date.month)}
