@@ -4,28 +4,18 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div>
-        <p>Minjeong Kim / F / South Korea</p>
-        <p>Software Engineer living in Ireland</p>
-      </div>
-      <br />
-      <br />
-      <div>
-        <p>
-          Site Work In Progress
-        </p>
-        <p>
-          See More: <a href="https://www.youtube.com/playlist?list=PLfpv-skNLPCIkYqu88vDwn2eLcn0v2P1Y">https://www.youtube.com/playlist?list=PLfpv-skNLPCIkYqu88vDwn2eLcn0v2P1Y</a>
-        </p>
+      <h1>Minjeong Kim</h1>
+      <p className={styles.about}>
+        A Software Engineer based in Dublin, Ireland.<br />
+        Primary focus lies in frontend skillset and possess proficiency in backend skillset.<br />
         <br />
-        <div>
-          <Image
-            src={`/imgs/wip.jpg`}
-            width="500"
-            height="300"
-            alt="Work In Progress" />
-        </div>
-      </div>
+        On the frontend, accumulated experience across iOS, Android, Unity3D, React, Node.js, HTML, CSS, and Javascript.<br />
+        As for the backend, expertise extends to Java, Go, Kubernetes, and AWS.<br />
+        Also deeply passionate about Machine learning and AI programming.<br />
+        <br />
+        Dedicated to continuous learning.<br />
+        Active, creative, passionate, honest and reliable.<br />
+      </p>
     </div>
   );
 }
