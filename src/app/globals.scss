@@ -146,6 +146,7 @@ button {
 // https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme
 :root {
 	color-scheme: light dark;
+	overscroll-behavior: none;
 }
 
 /* global css */
