@@ -7,7 +7,6 @@ import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const pathname = usePathname()
-
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -22,7 +21,7 @@ export default function Header() {
         </div>
         <div className={styles.menus}>
           <Menu link="/" title="About Me" isSelected={pathname === '/'} />
-          <Menu link="/portfolios" title="Careers & Portfolios" isSelected={pathname === '/portfolios'} />
+          <Menu link="/portfolios" title="Careers & Portfolios" isSelected={pathname.includes('/portfolios')} />
         </div>
       </div>
     </header>
