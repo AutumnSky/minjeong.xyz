@@ -5,10 +5,17 @@
     flex-direction: row;
     width: 100wh;
     padding-left: 1.5rem;
-    padding-right: 4rem;
     padding-top: 1rem;
     align-items: center;
     justify-content: space-between;
+
+    @include simple-screen {
+        padding-right: 1.5rem;
+    }
+
+    @include rich-screen {
+        padding-right: 4rem;
+    }
 }
 
 .logos {
@@ -20,13 +27,22 @@
 
 .logos_profile {
     border-radius: 50%;
+    margin-right: 2rem;
 }
 
 .logos_name {
     color: $font-black-fallback;
     color: $font-black;
-    margin-left: 2rem;
+    margin-right: 2rem;
     font-size: 1.2rem;
+
+    @include simple-screen {
+        display: none;
+    }
+
+    @include rich-screen {
+        display: block;
+    }
 }
 
 .menus {

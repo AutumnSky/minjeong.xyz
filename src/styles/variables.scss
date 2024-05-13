@@ -73,3 +73,18 @@ $font-primary-fallback: map.get($theme-light, "font-primary");
 $font-secondary-fallback: map.get($theme-light, "font-secondary");
 $font-white-fallback: map.get($theme-light, "font-white");
 $font-black-fallback: map.get($theme-light, "font-black");
+
+/* Responsive Layout */
+$layout-breakpoint-simple: 900px;
+
+@mixin simple-screen {
+    @media (max-width: #{$layout-breakpoint-simple}) {
+        @content;
+    }
+}
+
+@mixin rich-screen {
+    @media (min-width: #{$layout-breakpoint-simple}) {
+        @content;
+    }
+}
