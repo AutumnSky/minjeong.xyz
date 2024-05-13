@@ -15,7 +15,6 @@ export default async function Portfolios() {
                         return (
                             <>
                                 <div className={styles.year}>{group.year}</div>
-
                                 {
                                     group.portfolios.map((portfolio) => {
                                         return (
