@@ -2,6 +2,14 @@
     display: flex;
     flex-direction: row;
     row-gap: 1rem;
+
+    @include simple-screen {
+        padding: 1.5rem;
+    }
+
+    @include rich-screen {
+        padding: 0;
+    }
 }
 
 .timeline {
@@ -20,13 +28,20 @@
 }
 
 .card_list {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 0;
-    padding-right: 2rem;
     display: flex;
     flex-direction: column;
     row-gap: 2.5rem;
+
+    @include simple-screen {
+        padding: 0;
+    }
+
+    @include rich-screen {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 0;
+        padding-right: 2rem;
+    }
 }
 
 .year {
